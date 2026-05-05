@@ -4,4 +4,4 @@ for lettre in range(97, 123):
     if chr(lettre) == "q" or chr(lettre) == "e":
         continue
     alphabet += chr(lettre)
-print(f"{alphabet}")
+print("{}".format(alphabet))
