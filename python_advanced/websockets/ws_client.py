@@ -4,7 +4,7 @@ import asyncio
 import websockets
 
 
-async def send_message():
+async def connect_and_send():
     """Send a single message and print the server's response."""
     async with websockets.connect("ws://localhost:8765") as websocket:
         await websocket.send("Hello WebSocket")
@@ -13,4 +13,4 @@ async def send_message():
 
 
 if __name__ == "__main__":
-    asyncio.run(send_message())
+    asyncio.run(connect_and_send())
